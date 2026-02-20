@@ -1,0 +1,9 @@
+# Claude Ads - Python Dependencies
+# Bounded version pinning with security-conscious minimums
+# Last updated: February 14, 2026
+
+requests>=2.32.4,<3.0.0           # CVE-2024-47081, CVE-2024-35195 fixes
+playwright>=1.56.0,<2.0.0         # CVE-2025-59288 fix (macOS)
+urllib3>=2.6.3,<3.0.0             # CRITICAL: CVE-2026-21441 (CVSS 8.9), CVE-2025-66418
+google-ads>=26.0.0,<30.0.0         # Google Ads API client (Python 3.13+)
+pyyaml>=6.0,<7.0                  # YAML config parsing
